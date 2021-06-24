@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödev Hafta 1 - Nesibe Sare Özkan</title>
+    <style>
+        body{
+            background: linear-gradient(135deg,
+                    rgba(179, 229, 252, 1) 0%,
+                    rgba(179, 229, 252, 0.3) 50%,
+                    rgba(240, 98, 146, 0.3) 50%,
+                    rgba(240, 98, 146, 1) 100%);
+        }
+        .divClass {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        button {
+
+            background-color: rgb(66, 25, 85);
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: #df46b8;
+            color: white;
+        }
+
+        a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 1vh 1vh;
+            
+            display: flex;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            margin: 0px;
+            padding: 0px;
+        }
+        h1, h2{
+            display: flex;
+            font-family: Georgia, serif;
+            color: rgb(66, 25, 85);
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+
+        <a id="linkedinUrl" target="_blank"><img src="linkedin32.png" alt="linkedin"></a>
+        <a id="githubUrl" target="_blank"><img src="github32.png" alt="github"></a>
+    </div>
+    <div class="divClass">
+
+        <h1 id="nameSurname"></h1>
+        
+        <h2 id="age"></h2>
+        <button id="buttonId" onclick="createHtmlElements()">İsim ve Yaşımı Getir</button>
+        <div>
+
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
